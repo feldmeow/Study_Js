@@ -14,23 +14,15 @@ console.log(typeof money);
 console.log(typeof income);
 console.log(typeof deposit);
 console.log(addExpenses.length);
-console.log(addExpenses2.length);
 console.log("Период равен " + period + " месяцев");
 console.log("Цель заработать " + mission + " долларов");
 console.log(addExpenses.toLowerCase().split(", "));
-console.log(addExpenses2.toLowerCase().split(", "));
 let budgetMonth = money - amount;
-let budgetMonth2 = money2 - amount2;
 let budgetDay = budgetMonth / 30;
-let budgetDay2 = budgetMonth2 / 30;
 console.log("Бюджет на день: " + Math.floor(budgetDay));
-console.log("Бюджет на день(2): " + Math.floor(budgetDay2));
 console.log("Бюджет на месяц: " + budgetMonth);
-console.log("Бюджет на месяц(2): " + budgetMonth2);
 let missionAccIn = mission / budgetMonth;
-let missionAccIn2 = mission / budgetMonth2;
 console.log("Цель будет достигнута через: " + Math.ceil(missionAccIn) + " месяцев");
-console.log("Цель(2) будет достигнута через: " + Math.ceil(missionAccIn2) + " месяцев");
 if (budgetDay > 1200) {
   console.log("У вас высокий уровень дохода")
 } else if (budgetDay > 600 & budgetDay < 1200) {
@@ -40,12 +32,3 @@ if (budgetDay > 1200) {
 } else {
   console.log("Что то пошло не так")
 };
-if (budgetDay2 > 1200) {
-  console.log("У вас высокий уровень дохода(2)")
-} else if (budgetDay2 > 600 & budgetDay2 < 1200) {
-  console.log("У вас средний уровень дохода(2)")
-} else if (budgetDay2 >= 0 & budgetDay2 < 600) {
-  console.log("К сожалению у вас уровень дохода ниже среднего(2)")
-} else {
-  console.log("Что то пошло не так(2)")
-}
