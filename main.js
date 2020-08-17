@@ -3,6 +3,7 @@ let money = (prompt("Ваш месячный доход?")) * 1;
 let income = "вторая работа";
 let expenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
 let expenses2 = prompt("Перечислите возможные расходы за рассчитываемый период через запятую(2)");
+let addExpenses = expenses + ", " + expenses2;
 let amount = prompt("Во сколько это обойдется?") * 1;
 let amount2 = prompt("Во сколько это обойдется?(2)") * 1;
 let deposit = confirm("Есть ли у вас депозит в банке?");
@@ -31,7 +32,7 @@ showTypeOf(money);
 showTypeOf(income);
 showTypeOf(deposit);
 console.log("Расходы за месяц: " + expensesMonth)
-console.log((expenses.toLowerCase() + ", " + expenses2.toLowerCase()).split(", "));
+console.log(addExpenses.split(", "));
 console.log("Цель будет достигнута через: " + targetMonth + " месяцев");
 let budgetDay = accumulatedMonth / 30;
 console.log("Бюджет на день: " + Math.floor(budgetDay));
