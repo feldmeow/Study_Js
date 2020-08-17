@@ -1,13 +1,11 @@
 'use strict';
 let money = (prompt("Ваш месячный доход?")) * 1;
-let money2 = (prompt("Ваш месячный доход?(2)")) * 1;
 let income = "вторая работа";
 let addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
 let addExpenses2 = prompt("Перечислите возможные расходы за рассчитываемый период через запятую(2)");
 let amount = prompt("Во сколько это обойдется?") * 1;
 let amount2 = prompt("Во сколько это обойдется?(2)") * 1;
 let deposit = confirm("Есть ли у вас депозит в банке?");
-let deposit2 = confirm("Есть ли у вас депозит в банке?(2)");
 let mission = 50000;
 let period = 12;
 console.log(typeof money);
