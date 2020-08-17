@@ -32,7 +32,7 @@ showTypeOf(money);
 showTypeOf(income);
 showTypeOf(deposit);
 console.log("Расходы за месяц: " + expensesMonth)
-console.log(addExpenses.split(", "));
+console.log(addExpenses.toLowerCase().split(", "));
 console.log("Цель будет достигнута через: " + targetMonth + " месяцев");
 let budgetDay = accumulatedMonth / 30;
 console.log("Бюджет на день: " + Math.floor(budgetDay));
