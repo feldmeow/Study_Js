@@ -1,9 +1,9 @@
 'use strict';
 let money = (prompt("Ваш месячный доход?")) * 1;
 let income = "вторая работа";
-let expenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
-let expenses2 = prompt("Перечислите возможные расходы за рассчитываемый период через запятую(2)");
-let addExpenses = expenses + ", " + expenses2;
+let expenses = prompt("Введите обязательную статью расходов?");
+let expenses2 = prompt("Введите обязательную статью расходов?(2)");
+let addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
 let amount = prompt("Во сколько это обойдется?") * 1;
 let amount2 = prompt("Во сколько это обойдется?(2)") * 1;
 let deposit = confirm("Есть ли у вас депозит в банке?");
