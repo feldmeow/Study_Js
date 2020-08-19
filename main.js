@@ -4,6 +4,7 @@ let isNumber = function (n) {
 };
 
 
+let money;
 let start = function () {
   do {
     money = (prompt("Ваш месячный доход?"));
@@ -14,8 +15,7 @@ let start = function () {
 start();
 
 
-let money,
-  income = "вторая работа",
+let income = "вторая работа",
   addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую"),
   deposit = confirm("Есть ли у вас депозит в банке?"),
   mission = 50000,
@@ -28,7 +28,7 @@ let expenses = [];
 let getExpensesMonth = function () {
   let sum = 0;
   let amount = 0;
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 2; i++) {
     expenses[i] = prompt("Введите обязательную статью расходов?");
     sum = prompt("Во сколько это обойдется?");
     amount += +sum
