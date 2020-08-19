@@ -4,6 +4,14 @@ let isNumber = function (n) {
 };
 
 
+let start = function () {
+  do {
+    money = (prompt("Ваш месячный доход?"));
+  }
+  while (!isNumber(money));
+
+};
+start();
 
 
 let money,
@@ -14,14 +22,6 @@ let money,
   period = 12;
 
 //проверка входящих данных
-let start = function () {
-  do {
-    money = (prompt("Ваш месячный доход?"));
-  }
-  while (!isNumber(money));
-
-};
-start();
 
 //вызов модальных окон
 let expenses = [];
