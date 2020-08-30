@@ -142,3 +142,38 @@ for (let prop in appData) {
 
   console.log('Наша программа включает в себя данные: ' + prop + ' - ' + appData[prop]);
 };
+
+// Записываем элементы DOM-дерева в переменные
+// кнопки
+const calcButton = document.getElementById('start');
+const incomeAddButton = document.getElementsByTagName('button')[0];
+const expensesAddButton = document.getElementsByTagName('button')[1];
+// чекбокс ДЕПОЗИТ
+const checkDeposit = document.querySelector('#deposit-check');
+// поля для ввода ВОЗМОЖНЫХ источников заработка
+const additionalIncomeInput = document.querySelectorAll('.additional_income-item');
+// переменные результатов (левая сторона)
+const budgetMonthResult = document.getElementsByClassName('budget_month-value');
+const budgetDayResult = document.getElementsByClassName('budget_day-value');
+const expensesMonthResult = document.getElementsByClassName('expenses_month-value');
+const additionalIncomeResult = document.getElementsByClassName('additional_income-value');
+const additionalExpensesResult = document.getElementsByClassName('additional_expenses-value');
+const incomePeriodResult = document.getElementsByClassName('income_period-value"');
+const targetMonthResult = document.getElementsByClassName('target_month-value');
+// оставшиеся поля (правая сторона)
+const inputMoney = document.querySelector('.salary-amount');
+// дополнительный доход
+const incomeTitle = document.querySelector('.income-title');
+const incomeAmount = document.querySelector('.income-amount');
+// обязательные расходы
+const expensesTitle = document.querySelector('.expenses-title');
+const expensesAmount = document.querySelector('.expenses-amount');
+// возможные расходы
+const additionalExpenses = document.querySelector('.additional_expenses-item');
+// цель
+const targetAmount = document.querySelector('.target-amount');
+// период
+const periodValue = document.querySelector('.period-select');
+
+
+
