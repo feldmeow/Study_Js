@@ -89,7 +89,6 @@ let appData = {
     this.showResult();
     addBtn(incomePlus);
     addBtn(expensesPlus);
-    console.log(appData);
   },
   // Запись данных в инпуты справа(результаты)
   showResult: function () {
@@ -173,7 +172,7 @@ let appData = {
 
   //Рассчёт обязательных месячных расходов
   getExpensesMonth: function () {
-    for (let key in appData.expenses) {
+    for (let key in this.expenses) {
       this.expensesMonth += +this.expenses[key];
     }
 
@@ -181,7 +180,7 @@ let appData = {
 
   //Рассчёт дополнительных месячных доходов
   getIncomeMonth: function () {
-    for (let key in appData.income) {
+    for (let key in this.income) {
       this.incomeMonth += +this.income[key];
     }
   },
