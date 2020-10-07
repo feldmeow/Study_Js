@@ -271,7 +271,7 @@ AppData.prototype.addBtn = function (btn) {
   btn.style.display = 'block';
 }
 // Слушатели событий
-function eventListeners() {
+AppData.prototype.eventListeners = function () {
   expensesPlus.addEventListener('click', appData.addExpensesBlock);
   incomePlus.addEventListener('click', appData.addIncomeBlock);
 
@@ -296,7 +296,7 @@ function eventListeners() {
 };
 
 const appData = new AppData();
-eventListeners();
+appData.eventListeners();
 
 
 
